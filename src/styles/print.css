@@ -1,0 +1,75 @@
+/* print.css */
+@media print {
+  /* Reset styles for print */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Adjust layout */
+  body {
+    width: 100%;
+    margin: 10%;
+    padding: 0;
+    line-height: 1.4;
+    font-size: 12pt;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  /* Hide unnecessary elements */
+  nav,
+  footer,
+  .theme-toggle,
+  .social-links {
+    display: none !important;
+  }
+
+  /* Enhance typography */
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 0.5cm;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-top: 1cm;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Handle links */
+  a {
+    text-decoration: none;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+
+  /* Page breaks */
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* CV/Resume specific styles */
+  .cv-section {
+    margin-bottom: 1cm;
+  }
+
+  .cv-item {
+    break-inside: avoid;
+  }
+
+  .skills-list {
+    column-count: 2;
+    column-gap: 1cm;
+  }
+}

@@ -1,0 +1,24 @@
+---
+// components/AccessibilityBase.astro
+---
+
+<style is:global>
+  .focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  }
+</style>
+
+<script>
+  // Only run this script on the client side
+  if (typeof document !== 'undefined') {
+    document.body.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        document.body.classList.add('user-is-tabbing');
+      }
+    });
+
+    document.body.addEventListener('mousedown', () => {
+      document.body.classList.remove('user-is-tabbing');
+    });
+  }
+</script>

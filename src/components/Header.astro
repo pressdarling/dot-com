@@ -1,0 +1,72 @@
+---
+interface Props {
+  siteTitle: string;
+  currentPath: string;
+}
+
+const { siteTitle, currentPath } = Astro.props;
+---
+
+<header class="bg-white dark:bg-gray-800 shadow-md">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-gray-800 dark:text-white">
+      <a href="/" class="hover:text-blue-500 transition-colors duration-300">
+        {siteTitle}
+      </a>
+    </h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li>
+          <a 
+            href="/" 
+            class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
+              currentPath === '/' ? 'font-bold' : ''
+            }`}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/about" 
+            class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
+              currentPath === '/about' ? 'font-bold' : ''
+            }`}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/cv-resume" 
+            class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
+              currentPath === '/cv-resume' ? 'font-bold' : ''
+            }`}
+          >
+            CV/Resume
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/portfolio" 
+            class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
+              currentPath === '/portfolio' ? 'font-bold' : ''
+            }`}
+          >
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a 
+            href="/contact" 
+            class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
+              currentPath === '/contact' ? 'font-bold' : ''
+            }`}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

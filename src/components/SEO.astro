@@ -1,0 +1,70 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  canonicalURL?: string;
+  type?: 'website' | 'article';
+}
+
+const { 
+  title, 
+  description, 
+  image = '/images/default-og-image.jpg', 
+  canonicalURL = Astro.url.pathname, 
+  type = 'website',
+} = Astro.props;
+
+const siteName = 'Brady Clarke';
+const siteURL = Astro.site ? Astro.site.toString() : 'https://bradyclarke.com';  // Provide a fallback URL
+const fullCanonicalURL = new URL(canonicalURL, siteURL).toString();
+const imageURL = new URL(image, siteURL).toString();
+
+const imageSrc = image 
+  ? (Astro.site ? new URL(image, Astro.site) : image)
+  : '/images/default-og-image.jpg';
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={fullCanonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type}>
+<meta property="og:url" content={fullCanonicalURL}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:image" content={imageURL}>
+<meta property="og:site_name" content={siteName} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content={fullCanonicalURL}>
+<meta property="twitter:title" content={title}>
+<meta property="twitter:description" content={description}>
+<meta property="twitter:image" content={imageURL}>
+
+<!-- Additional Metadata -->
+<meta name="author" content="Brady Clarke" />
+<meta name="theme-color" content="#4a9aff" />
+
+<!-- JSON-LD -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Brady Clarke Portfolio",
+  "url": siteURL,
+  "description": description,
+  // Add more structured data as needed
+})}></script>
+

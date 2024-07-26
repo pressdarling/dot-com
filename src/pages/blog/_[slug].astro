@@ -1,0 +1,19 @@
+---
+import { loadContent } from '../../utils/contentLoader';
+
+export async function getStaticPaths() {
+  const posts = await loadContent('blog/index.json');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await loadContent(`blog/${post.slug}.md`);
+---
+
+<article>
+  <h1>{post.title}</h1>
+  <Content />
+</article>

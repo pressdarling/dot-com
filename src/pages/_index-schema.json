@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brady Clarke",
+  "url": "https://bradyclarke.com",
+  "jobTitle": "Web Developer & Technology Consultant",
+  "description": "Brady Clarke is online and technology consultant specializing in innovative web solutions and AI/ML implementation.",
+  "sameAs": [
+    "https://www.linkedin.com/in/brady-clarke/",
+    "https://github.com/bradyclarke",
+    "https://twitter.com/bradyclarke"
+  ],
+  "knowsAbout": [
+    "Web Development",
+    "Astro",
+    "Tailwind CSS",
+    "AI/ML Implementation",
+    "Knowledge Systems Architecture",
+    "Ethical Tech Consulting"
+  ]
+}

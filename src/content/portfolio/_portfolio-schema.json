@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brady Clarke",
+  "url": "https://bradyclarke.com/about",
+  "jobTitle": "Web Developer & Technology Consultant",
+  "description": "Brady Clarke is a web developer and technology consultant with a passion for AI/ML, knowledge systems, and ethical tech solutions.",
+  "skills": [
+    "Web Development",
+    "AI/ML Implementation",
+    "Knowledge Systems Architecture",
+    "Ethical Tech Consulting",
+    "Digital Marketing Strategy"
+  ],
+  "worksFor": {
+    "@type": "Individual",
+    "name": "Me",
+    "description": "Providing web development and technology consulting services"
+  }
+}

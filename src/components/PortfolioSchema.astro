@@ -1,0 +1,36 @@
+---
+const projects = await getPortfolioProjects(); // Assume this function fetches project data
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Brady Clarke's Portfolio",
+  "description": "A showcase of web development projects by Brady Clarke",
+  "url": "https://bradyclarke.com/portfolio",
+  "author": {
+    "@type": "Person",
+    "name": "Brady Clarke"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {projects.map((project, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "WebSite",
+          "name": project.title,
+          "url": project.url,
+          "description": project.description,
+          "author": {
+            "@type": "Person",
+            "name": "Brady Clarke"
+          }
+        }
+      }))}
+    ]
+  }
+}
+</script>

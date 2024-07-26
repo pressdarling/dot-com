@@ -1,16 +1,24 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Brady Clarke - Home" description="Welcome to Brady Clarke's portfolio">
+    <header>
+        <h1>Brady Clarke</h1>
+    </header>
+    <main>
+        <p>I'm Brady. Hi! Welcome to my website.</p>
+
+        <p>
+            I do <a href="https://www.linkedin.com/in/brady-clarke/">web stuff</a>,
+            <a href="https://instagram.com/bradyclarkeartist">paint</a>, and
+            <a href="https://sunsetnevers.bandcamp.com">make</a>
+            <a href="https://wist.bandcamp.com">music</a>.
+        </p>
+
+        <p>
+            Contact me by
+            <a href="mailto:brady@bradyclarke.com?Subject=I%20clicked%20this%20%22email%22%20link%20on%20your%20website%20and%20all%20I%20got%20was%20this%20prefilled%20subject%20line!">email</a>.
+        </p>
+    </main>
+</Layout>
