@@ -1,0 +1,51 @@
+name: Issue and PR Automation
+
+on:
+  issues:
+    types: [opened, reopened, closed]
+  pull_request:
+    types: [opened, reopened, closed, merged]
+
+jobs:
+  manage_issues_and_prs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Move new issues to "To Do"
+        if: github.event_name == 'issues' && github.event.action == 'opened'
+        uses: alex-page/github-project-automation-plus@v0.8.1
+        with:
+          project: "Portfolio Website"
+          column: "To Do"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Move reopened issues to "In Progress"
+        if: github.event_name == 'issues' && github.event.action == 'reopened'
+        uses: alex-page/github-project-automation-plus@v0.8.1
+        with:
+          project: "Portfolio Website"
+          column: "In Progress"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Move issues with PRs to "In Review"
+        if: github.event_name == 'pull_request' && github.event.action == 'opened'
+        uses: alex-page/github-project-automation-plus@v0.8.1
+        with:
+          project: "Portfolio Website"
+          column: "Review"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Move closed issues and merged PRs to "Done"
+        if: (github.event_name == 'issues' && github.event.action == 'closed') || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true)
+        uses: alex-page/github-project-automation-plus@v0.8.1
+        with:
+          project: "Portfolio Website"
+          column: "Done"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Label PRs based on files changed
+        if: github.event_name == 'pull_request' && github.event.action == 'opened'
+        uses: actions/labeler@v2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
