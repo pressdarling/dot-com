@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "playwright test"
+    "test": "astro build && playwright test"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.3",
