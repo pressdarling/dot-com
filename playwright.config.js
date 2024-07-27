@@ -8,7 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
-    baseURL: "http://localhost:3000",
+    baseURL: "http://localhost:4321", // Astro's default port is 4321
     trace: "on-first-retry",
   },
   projects: [
@@ -19,7 +19,10 @@ export default defineConfig({
   ],
   webServer: {
     command: "npm run preview",
-    port: 3000,
+    port: 4321,
+    timeout: 120000, // Increase timeout to 2 minutes
     reuseExistingServer: !process.env.CI,
+    stdout: "pipe",
+    stderr: "pipe",
   },
 });
