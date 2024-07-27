@@ -5,6 +5,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEO from '../components/SEO.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
+import AccessibilityBase from '../components/AccessibilityBase.astro';
 
 interface Props {
   title: string;
@@ -27,11 +28,23 @@ const { title, description, image, canonicalURL, type } = Astro.props;
     <meta name="generator" content={Astro.generator} />
   </head>
   <body class="flex flex-col min-h-screen">
+    <AccessibilityBase />
+    <a href="#main-content" class="sr-only focus:not-sr-only">
+    Skip to main content
+    </a>
     <ThemeToggle />
     <Header siteTitle="Brady Clarke" currentPath={Astro.url.pathname} />
-    <main class="flex-grow container mx-auto px-4 py-8">
+    <main id="main-content" class="flex-grow container mx-auto px-4 py-8">
       <slot />
     </main>
     <Footer />
   </body>
 </html>
+
+
+
+<style is:global>
+  .user-is-tabbing :focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  }
+</style>

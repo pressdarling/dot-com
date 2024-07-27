@@ -44,7 +44,7 @@ const imageSrc = image
 <meta property="og:url" content={fullCanonicalURL}>
 <meta property="og:title" content={title}>
 <meta property="og:description" content={description}>
-<meta property="og:image" content={imageURL}>
+<meta property="og:image" content={imageSrc}>
 <meta property="og:site_name" content={siteName} />
 
 <!-- Twitter -->
@@ -52,14 +52,14 @@ const imageSrc = image
 <meta property="twitter:url" content={fullCanonicalURL}>
 <meta property="twitter:title" content={title}>
 <meta property="twitter:description" content={description}>
-<meta property="twitter:image" content={imageURL}>
+<meta property="twitter:image" content={imageSrc}>
 
 <!-- Additional Metadata -->
 <meta name="author" content="Brady Clarke" />
 <meta name="theme-color" content="#4a9aff" />
 
 <!-- JSON-LD -->
-<script type="application/ld+json" set:html={JSON.stringify({
+<script is:inline type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Brady Clarke Portfolio",

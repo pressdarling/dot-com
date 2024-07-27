@@ -2,10 +2,10 @@
 ---
 
 <script>
-  const themeToggle = document.getElementById('theme-toggle');
+  const themeToggle = document.getElementById('theme-toggle') as HTMLElement;
   const htmlElement = document.documentElement;
 
-  function setTheme(theme) {
+  function setTheme(theme: string) {
     if (theme === 'fun') {
       htmlElement.classList.add('fun');
       htmlElement.classList.remove('professional');
@@ -16,11 +16,13 @@
     localStorage.setItem('theme', theme);
   }
 
-  themeToggle.addEventListener('click', () => {
-    const currentTheme = htmlElement.classList.contains('fun') ? 'fun' : 'professional';
-    const newTheme = currentTheme === 'fun' ? 'professional' : 'fun';
-    setTheme(newTheme);
-  });
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlElement.classList.contains('fun') ? 'fun' : 'professional';
+      const newTheme = currentTheme === 'fun' ? 'professional' : 'fun';
+      setTheme(newTheme);
+    });
+  }
 
   // Set initial theme based on localStorage or system preference
   const storedTheme = localStorage.getItem('theme');

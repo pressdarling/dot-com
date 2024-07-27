@@ -1,14 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getEntry } from 'astro:content';
+import '../styles/print.css';
 import PrintButton from '../components/PrintButton.astro';
 
 // Wrap this in a try/catch to handle potential errors
 let cvData;
 try {
   const cv = await getEntry('cv', 'index');
-  const { Content } = await cv.render();
-  cvData = { ...cv.data, Content };
+  cvData = cv.data;
 } catch (error) {
   console.error('Error loading CV data:', error);
   cvData = null;

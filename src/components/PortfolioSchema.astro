@@ -1,13 +1,17 @@
 ---
+const getPortfolioProjects = async () => {
+  // Implement this function or import it from somewhere
+  return [];
+};
 const projects = await getPortfolioProjects(); // Assume this function fetches project data
 ---
 
-<script type="application/ld+json">
+<script is:inline type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Brady Clarke's Portfolio",
-  "description": "A showcase of web development projects by Brady Clarke",
+  "description": "A showcase of projects by Brady Clarke",
   "url": "https://bradyclarke.com/portfolio",
   "author": {
     "@type": "Person",

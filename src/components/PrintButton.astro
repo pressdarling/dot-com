@@ -1,12 +1,18 @@
 ---
+import '../styles/print.css';
 ---
 <button id="print-button" class="print-button">
   Click Here For Boring Magic
 </button>
 
 <script>
-  document.getElementById('print-button').addEventListener('click', () => {
-    window.print();
+  document.addEventListener('DOMContentLoaded', () => {
+    const printButton = document.getElementById('print-button');
+    if (printButton) {
+      printButton.addEventListener('click', () => {
+        window.print();
+      });
+    }
   });
 </script>
 
