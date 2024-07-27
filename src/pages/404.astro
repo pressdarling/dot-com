@@ -3,7 +3,10 @@ import Layout from '../layouts/Layout.astro';
 
 const errorInfo = {
   requestUrl: Astro.url.pathname,
+// troubleshooting TODO
 //  clientAddress: Astro.clientAddress ?? 'Not available in static mode',
+// const headers = Astro.request.headers;`
+// const referer = Astro.site ? headers.get('referer') : 'Not available in static mode';
   referer: Astro.request.headers.get('referer') || 'Not available',
   userAgent: Astro.request.headers.get('user-agent') || 'Not available',
 };
