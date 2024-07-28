@@ -1,9 +1,9 @@
 ---
-const getPortfolioProjects = async () => {
-  // Implement this function or import it from somewhere
-  return [];
-};
-const projects = await getPortfolioProjects(); // Assume this function fetches project data
+// const getPortfolioProjects = async () => {
+//   // Implement this function or import it from somewhere
+//   return [];
+// };
+// const projects = await getPortfolioProjects(); // Assume this function fetches project data
 ---
 
 <script is:inline type="application/ld+json">
@@ -20,8 +20,7 @@ const projects = await getPortfolioProjects(); // Assume this function fetches p
   "mainEntity": {
     "@type": "ItemList",
     "itemListElement": [
-      {
-        projects.map((project, index) => ({
+      {projects.map((project, index) => ({
         "@type": "ListItem",
         "position": index + 1,
         "item": {

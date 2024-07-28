@@ -1,6 +1,6 @@
 import globals from 'globals';
 import eslint from '@eslint/js';
-import tseslint from '@typescript-eslint/eslint-plugin';
+import tseslint from 'typescript-eslint';
 import eslintPluginAstro from 'eslint-plugin-astro';
 
 export default [
@@ -8,9 +8,10 @@ export default [
   { languageOptions: { globals: globals.browser } },
   {
     files: ['**/*.{js,mjs,cjs,ts,astro}'],
-    plugins: {
-      '@typescript-eslint': tseslint,
-    },
+    ...tseslint.config(
+      eslint.configs.recommended,
+      ...tseslint.configs.recommended
+    ),
     rules: {
       semi: ['error', 'always'],
       'prefer-const': 'error',

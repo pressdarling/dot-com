@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
-const usePrivateContent = process.env.USE_PRIVATE_CONTENT === 'true';
+const usePrivateContent = process.env['USE_PRIVATE_CONTENT'] === 'true';
 
 export function loadContent(path: string) {
   if (usePrivateContent) {
