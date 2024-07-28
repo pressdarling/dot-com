@@ -8,20 +8,20 @@
   }
 
   body {
-    @apply font-mono text-center text-[#420];
+    @apply text-center font-mono text-[#420];
   }
 
   main {
-    @apply max-w-[70ch] p-8 mx-auto;
+    @apply mx-auto max-w-[70ch] p-8;
   }
 
   h1 {
-    @apply text-5xl font-bold font-sans tracking-tight text-[#18C1F3];
+    @apply font-sans text-5xl font-bold tracking-tight text-[#18C1F3];
     animation: cycleh1 15s linear infinite;
   }
 
   a {
-    @apply font-bold text-[#18C1F3] hover:text-pink-300 hover:animate-pulse;
+    @apply font-bold text-[#18C1F3] hover:animate-pulse hover:text-pink-300;
   }
 }
 

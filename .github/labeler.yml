@@ -1,19 +1,19 @@
 # Add 'frontend' label to any change to *.js files as long as the `main.js` hasn't changed
 frontend:
-  - any: ["src/**/*.js", "!src/main.js"]
+  - any: ['src/**/*.js', '!src/main.js']
 
 # Add 'backend' label to any change to *.py files
 backend:
-  - "**/*.py"
+  - '**/*.py'
 
 # Add 'documentation' label to any change to *.md files
 documentation:
-  - "**/*.md"
+  - '**/*.md'
 
 # Add 'css' label to any change to *.css files
 css:
-  - "**/*.css"
+  - '**/*.css'
 
 # Add 'astro' label to any change to *.astro files
 astro:
-  - "**/*.astro"
+  - '**/*.astro'

@@ -2,7 +2,7 @@
 import type { Image } from 'astro:assets';
 
 interface Props {
-//  src: string;
+  //  src: string;
   src: ImageMetadata;
   alt: string;
   width: number;
@@ -11,7 +11,14 @@ interface Props {
   class?: string;
 }
 
-const { src, alt, width, height, sizes = '(max-width: 768px) 100vw, 768px', class: className } = Astro.props; 
+const {
+  src,
+  alt,
+  width,
+  height,
+  sizes = '(max-width: 768px) 100vw, 768px',
+  class: className,
+} = Astro.props;
 
 // interface Props {
 //   src: ImageMetadata;
@@ -22,16 +29,15 @@ const { src, alt, width, height, sizes = '(max-width: 768px) 100vw, 768px', clas
 // }
 
 // const { src, alt, widths, sizes, class: className } = Astro.props;
-
 ---
 
-<Image 
+<Image
   src={src}
   alt={alt}
   width={width}
   height={height}
   sizes={sizes}
-  loading="lazy"
-  decoding="async"
+  loading='lazy'
+  decoding='async'
   class={className}
 />

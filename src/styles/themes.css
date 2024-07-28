@@ -5,18 +5,18 @@
 @layer base {
   /* Professional theme (dark mode) */
   .dark {
-    --color-bg: theme("colors.gray.900");
-    --color-text: theme("colors.gray.100");
-    --color-primary: theme("colors.blue.500");
-    --color-secondary: theme("colors.purple.500");
+    --color-bg: theme('colors.gray.900');
+    --color-text: theme('colors.gray.100');
+    --color-primary: theme('colors.blue.500');
+    --color-secondary: theme('colors.purple.500');
   }
 
   /* Fun theme */
   .fun {
-    --color-bg: theme("colors.yellow.100");
-    --color-text: theme("colors.pink.800");
-    --color-primary: theme("colors.green.500");
-    --color-secondary: theme("colors.orange.500");
+    --color-bg: theme('colors.yellow.100');
+    --color-text: theme('colors.pink.800');
+    --color-primary: theme('colors.green.500');
+    --color-secondary: theme('colors.orange.500');
   }
 }
 
@@ -30,7 +30,7 @@
 
 /* Apply theme colors */
 body {
-  @apply bg-[var(--color-bg)] text-[var(--color-text)] theme-transition;
+  @apply theme-transition bg-[var(--color-bg)] text-[var(--color-text)];
 }
 
 h1,
@@ -39,11 +39,11 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-[var(--color-primary)] theme-transition;
+  @apply theme-transition text-[var(--color-primary)];
 }
 
 a {
-  @apply text-[var(--color-secondary)] hover:text-[var(--color-primary)] theme-transition;
+  @apply theme-transition text-[var(--color-secondary)] hover:text-[var(--color-primary)];
 }
 
 /* Fun theme specific styles */

@@ -7,18 +7,18 @@ interface Props {
 const { siteTitle, currentPath } = Astro.props;
 ---
 
-<header class="bg-white dark:bg-gray-800 shadow-md">
-  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-gray-800 dark:text-white">
-      <a href="/" class="hover:text-blue-500 transition-colors duration-300">
+<header class='bg-white shadow-md dark:bg-gray-800'>
+  <div class='container mx-auto flex items-center justify-between px-4 py-4'>
+    <h1 class='text-2xl font-bold text-gray-800 dark:text-white'>
+      <a href='/' class='transition-colors duration-300 hover:text-blue-500'>
         {siteTitle}
       </a>
     </h1>
     <nav>
-      <ul class="flex space-x-4">
+      <ul class='flex space-x-4'>
         <li>
-          <a 
-            href="/" 
+          <a
+            href='/'
             class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
               currentPath === '/' ? 'font-bold' : ''
             }`}
@@ -27,8 +27,8 @@ const { siteTitle, currentPath } = Astro.props;
           </a>
         </li>
         <li>
-          <a 
-            href="/about" 
+          <a
+            href='/about'
             class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
               currentPath === '/about' ? 'font-bold' : ''
             }`}
@@ -37,8 +37,8 @@ const { siteTitle, currentPath } = Astro.props;
           </a>
         </li>
         <li>
-          <a 
-            href="/cv-resume" 
+          <a
+            href='/cv-resume'
             class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
               currentPath === '/cv-resume' ? 'font-bold' : ''
             }`}
@@ -47,8 +47,8 @@ const { siteTitle, currentPath } = Astro.props;
           </a>
         </li>
         <li>
-          <a 
-            href="/portfolio" 
+          <a
+            href='/portfolio'
             class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
               currentPath === '/portfolio' ? 'font-bold' : ''
             }`}
@@ -57,8 +57,8 @@ const { siteTitle, currentPath } = Astro.props;
           </a>
         </li>
         <li>
-          <a 
-            href="/contact" 
+          <a
+            href='/contact'
             class={`text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300 ${
               currentPath === '/contact' ? 'font-bold' : ''
             }`}

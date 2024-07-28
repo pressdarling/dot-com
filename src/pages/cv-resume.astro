@@ -15,54 +15,69 @@ try {
 }
 ---
 
-<Layout title="CV/Resume | Brady Clarke" description="Brady Clarke's professional experience and skills">
-  <link rel="stylesheet" href="/styles/print.css" media="print">
-  <main class="cv-page">
+<Layout
+  title='CV/Resume | Brady Clarke'
+  description="Brady Clarke's professional experience and skills"
+>
+  <link rel='stylesheet' href='/styles/print.css' media='print' />
+  <main class='cv-page'>
     <h1>CV/Resume</h1>
     <PrintButton />
-    {cvData ? (
-      <div class="cv-content">
-        <section class="cv-section">
-          <h2>Professional Summary</h2>
-          <p>{cvData.summary}</p>
-        </section>
+    {
+      cvData ? (
+        <div class='cv-content'>
+          <section class='cv-section'>
+            <h2>Professional Summary</h2>
+            <p>{cvData.summary}</p>
+          </section>
 
-        <section class="cv-section">
-          <h2>Work Experience</h2>
-          {cvData.experience.map((job) => (
-            <div class="cv-item">
-              <h3>{job.title} at {job.company}</h3>
-              <p class="cv-date">{job.startDate} - {job.endDate}</p>
-              <ul>
-                {job.responsibilities.map((resp) => (
-                  <li>{resp}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </section>
-
-        <section class="cv-section">
-          <h2>Skills</h2>
-          <ul class="skills-list">
-            {cvData.skills.map((skill) => (
-              <li>{skill}</li>
+          <section class='cv-section'>
+            <h2>Work Experience</h2>
+            {cvData.experience.map((job) => (
+              <div class='cv-item'>
+                <h3>
+                  {job.title} at {job.company}
+                </h3>
+                <p class='cv-date'>
+                  {job.startDate} - {job.endDate}
+                </p>
+                <ul>
+                  {job.responsibilities.map((resp) => (
+                    <li>{resp}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
-        </section>
+          </section>
 
-        <section class="cv-section">
-          <h2>Education</h2>
-          {cvData.education.map((edu) => (
-            <div class="cv-item">
-              <h3>{edu.degree} in {edu.field}</h3>
-              <p>{edu.institution}, {edu.graduationYear}</p>
-            </div>
-          ))}
-        </section>
-      </div>
-    ) : (
-      <p>CV data is currently unavailable. Just check my LinkedIn for now and maybe let me know? :)</p>
-    )}
+          <section class='cv-section'>
+            <h2>Skills</h2>
+            <ul class='skills-list'>
+              {cvData.skills.map((skill) => (
+                <li>{skill}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section class='cv-section'>
+            <h2>Education</h2>
+            {cvData.education.map((edu) => (
+              <div class='cv-item'>
+                <h3>
+                  {edu.degree} in {edu.field}
+                </h3>
+                <p>
+                  {edu.institution}, {edu.graduationYear}
+                </p>
+              </div>
+            ))}
+          </section>
+        </div>
+      ) : (
+        <p>
+          CV data is currently unavailable. Just check my LinkedIn for now and maybe let me know? :)
+        </p>
+      )
+    }
   </main>
 </Layout>

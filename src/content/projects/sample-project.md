@@ -1,6 +1,6 @@
 ---
-title: "Sample Project"
-description: "A brief description of the project"
+title: 'Sample Project'
+description: 'A brief description of the project'
 date: 2024-07-27
 ---
 

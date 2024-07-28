@@ -1,4 +1,4 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from 'astro:content';
 
 const portfolioItemSchema = z.object({
   title: z.string(),
@@ -19,7 +19,7 @@ const projectCollection = defineCollection({
 });
 
 const cvCollection = defineCollection({
-  type: "data",
+  type: 'data',
   schema: z.object({
     summary: z.string(),
     experience: z.array(
@@ -29,7 +29,7 @@ const cvCollection = defineCollection({
         startDate: z.string(),
         endDate: z.string(),
         responsibilities: z.array(z.string()),
-      }),
+      })
     ),
     skills: z.array(z.string()),
     education: z.array(
@@ -38,13 +38,13 @@ const cvCollection = defineCollection({
         field: z.string(),
         institution: z.string(),
         graduationYear: z.number(),
-      }),
+      })
     ),
   }),
 });
 
 const blogCollection = defineCollection({
-  type: "content",
+  type: 'content',
   schema: z.object({
     title: z.string(),
     pubDate: z.date(),

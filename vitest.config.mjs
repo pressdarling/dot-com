@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { getViteConfig } from "astro/config";
+import { getViteConfig } from 'astro/config';
 
 export default getViteConfig(
   {
@@ -8,7 +8,7 @@ export default getViteConfig(
     },
   },
   {
-    site: "https://example.com/",
-    trailingSlash: "always",
-  },
+    site: 'https://example.com/',
+    trailingSlash: 'always',
+  }
 );

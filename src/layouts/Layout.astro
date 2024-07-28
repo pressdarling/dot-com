@@ -18,33 +18,27 @@ interface Props {
 const { title, description, image, canonicalURL, type } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <SEO {title} {description} {image} {canonicalURL} {type} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class='flex min-h-screen flex-col'>
     <AccessibilityBase />
-    <a href="#main-content" class="sr-only focus:not-sr-only">
-    Skip to main content
-    </a>
+    <a href='#main-content' class='sr-only focus:not-sr-only'> Skip to main content </a>
     <ThemeToggle />
-    <Header siteTitle="Brady Clarke" currentPath={Astro.url.pathname} />
-    <main id="main-content" class="flex-grow container mx-auto px-4 py-8">
+    <Header siteTitle='Brady Clarke' currentPath={Astro.url.pathname} />
+    <main id='main-content' class='container mx-auto flex-grow px-4 py-8'>
       <slot />
     </main>
     <Footer />
-  </body>
+  </body><style is:global>
+    .user-is-tabbing :focus-visible {
+      @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+    }
+  </style>
 </html>
-
-
-
-<style is:global>
-  .user-is-tabbing :focus-visible {
-    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
-  }
-</style>
