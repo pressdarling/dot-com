@@ -20,7 +20,7 @@ export default defineConfig({
   webServer: {
     command: "npm run preview",
     port: 4321,
-    timeout: 120000, // Increase timeout to 2 minutes
+    timeout: 120 * 1000, // 2 minutes
     reuseExistingServer: !process.env.CI,
     stdout: "pipe",
     stderr: "pipe",
