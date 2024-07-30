@@ -26,3 +26,6 @@ pnpm-debug.log*
 # test logs
 playwright-report/
 playwright-report/index.html
+
+# caches
+--cache-location/
