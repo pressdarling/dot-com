@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "build": "astro check && astro build",
+    "preview": "astro check && astro preview",
     "astro": "astro",
-    "test": "astro build && vitest && playwright test",
-    "test:unit": "vitest",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "vitest run --coverage",
     "test:e2e": "playwright test",
     "lint": "eslint \"src/**/*.{js,ts,astro}\"",
     "format": "prettier --write .",
@@ -37,6 +37,7 @@
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "vitest": "^2.0.4"
+    "vitest": "^2.0.4",
+    "@vitest/coverage-c8": "^2.0.4"
   }
 }
