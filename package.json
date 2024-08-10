@@ -29,15 +29,16 @@
     "@eslint/js": "^9.8.0",
     "@playwright/test": "^1.45.3",
     "@types/node": "^20.14.12",
+    "@vitest/coverage-v8": "^2.0.4",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.8.0",
     "eslint-plugin-astro": "^1.2.3",
+    "jsdom": "^24.1.1",
     "postcss": "^8.4.40",
     "prettier": "^3.3.3",
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "vitest": "^2.0.4",
-    "@vitest/coverage-c8": "^2.0.4"
+    "vitest": "^2.0.4"
   }
 }

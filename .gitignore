@@ -1,5 +1,6 @@
 # build output
 dist/
+
 # generated types
 .astro/
 
@@ -26,6 +27,8 @@ pnpm-debug.log*
 # test logs
 playwright-report/
 playwright-report/index.html
+coverage/
+test-results/
 
 # caches
 --cache-location/
