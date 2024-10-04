@@ -1,0 +1,79 @@
+{
+    "summary": "Over the course of my digital career, I've been a business systems analyst, technical content manager, subscriptions marketing manager, digital marketing consultant, content editor, web producer and project manager, social media strategist, spreadsheet analyst, copywriter, CMS specialist, and voice actor. I've learned that adaptability is key in this industry, and I excel at cross-functional roles that require diverse skillsets.",
+    "experience":
+    [
+        {
+            "title": "Freelance Digital Marketing Consultant",
+            "company": "Various clients",
+            "startDate": "June 2017",
+            "endDate": "Present",
+            "responsibilities":
+            [
+                "Assist clients with B2C and B2B online marketing through the entire funnel",
+                "Optimize channels for conversion and retention",
+                "Make the best use of limited resources in SMBs",
+                "Focus on minimizing wasted revenue for subscription-based and SaaS clients"
+            ]
+        },
+        {
+            "title": "Business Systems Analyst",
+            "company": "R/GA",
+            "startDate": "January 2018",
+            "endDate": "April 2024",
+            "responsibilities":
+            [
+                "Facilitate cross-office, cross-discipline and cross-agency collaboration",
+                "Manage and resolve critical issues proactively",
+                "Provide hands-on technical support and problem-solving",
+                "Work with diverse teams to solve complex business problems"
+            ]
+        },
+        {
+            "title": "Subscriptions Marketing Manager",
+            "company": "Crikey.com.au",
+            "startDate": "March 2016",
+            "endDate": "July 2017",
+            "responsibilities":
+            [
+                "Manage end-to-end digital marketing campaigns",
+                "Implement best practice solutions for pricing and UX",
+                "Oversee marketing automation, payments, and customer service",
+                "Increase customer conversion rates by 200% and retention from 40% to 60%"
+            ]
+        },
+        {
+            "title": "Digital Content Manager",
+            "company": "Private Media",
+            "startDate": "August 2014",
+            "endDate": "March 2016",
+            "responsibilities":
+            [
+                "Manage end-to-end project management for native advertising and content marketing campaigns",
+                "Produce and edit web content and graphics for various digital products",
+                "Conduct reporting, analytics, and process improvement across multiple platforms"
+            ]
+        }
+    ],
+    "skills":
+    [
+        "Technical Product Management",
+        "Business Transformation",
+        "Design Thinking",
+        "Digital Marketing",
+        "Content Strategy",
+        "Project Management",
+        "CMS Management",
+        "Data Analysis",
+        "Agile Methodologies",
+        "Customer Experience"
+    ],
+    "education":
+    [
+        {
+            "degree": "Bachelor of Arts",
+            "field": "Music",
+            "institution": "Australian Catholic University",
+            "graduationYear": 2010
+        }
+    ]
+}

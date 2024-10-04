@@ -1,0 +1,87 @@
+{
+    "summary": "10+ years of experience in business analysis, digital marketing, product strategy, project management, and content optimisation. Proven problem-solver on high-impact projects with a focus on driving business improvements through operational efficiency, leading communication initiatives, and helping teams adapt and stay connected and focused in fluid environments.",
+    "experience":
+    [
+        {
+            "title": "Business Systems Analyst",
+            "company": "R/GA",
+            "startDate": "2018",
+            "endDate": "2024",
+            "responsibilities":
+            [
+                "Leading content production process excellence for a major national website across two major visual and architectural overhauls, with highlights including implementing their first web personalisation program and seeing conversion improvements ranging from 5-38x above baseline in the test.",
+                "Launched and facilitated multiple internal training initiatives ranging from a technical onboarding program, effective use of generative AI, Agile 101, a BA centre of excellence, and how to be good at computers.",
+                "Responsible primarily for aligning user content/design needs with business requirements and technical restrictions across the digital ecosystem of Australia's most trusted automotive manufacturer, working alongside stakeholders from many client teams and external agencies.",
+                "Had exposure to bleeding-edge technical projects including various GenAI projects (LLMs, voice replication, ML vision), and a diverse range of other opportunities for clients from government to agriculture to cosmetics."
+            ]
+        },
+        {
+            "title": "Subscriptions Marketing Manager",
+            "company": "Crikey",
+            "startDate": "2016",
+            "endDate": "2017",
+            "responsibilities":
+            [
+                "Increased customer conversion rates 2x and increased retention from 40% to 60%, ending a long term decline and exceeding budget forecast for FY16-17.",
+                "Successfully implemented significant changes in marketing direction as well as acquisition and retention strategies, based on market research, audience testing, and internal data.",
+                "Responsible for commercial and customer success at the head of a small (2-4 person) cross-functional team, working closely with internal and external stakeholders to deliver and execute campaigns while responding to consumer needs."
+            ]
+        },
+        {
+            "title": "Digital Project Manager",
+            "company": "Private Media",
+            "startDate": "2014",
+            "endDate": "2016",
+            "responsibilities":
+            [
+                "Successfully managed parallel projects despite extremely limited resources, coordinating internal and external stakeholders to ensure delivery timing and specs met or exceeded client expectations.",
+                "Optimised content production and reporting processes across different tech stacks for each of up to seven distinct brands, working closely with the product team to aid in gaining efficiencies.",
+                "Responsible for production, execution, and reporting on commercial campaign partnerships across all of Private Media's mastheads for products including eBooks, webinars, display ads, solus eDMs, and more."
+            ]
+        },
+        {
+            "title": "Digital Content Editor",
+            "company": "Lonely Planet",
+            "startDate": "2013",
+            "endDate": "2014",
+            "responsibilities":
+            [
+                "Learning the benefits of combining content production and Agile software development processes, and working directly with the product team in an Agile environment to flag and improve manual workflows.",
+                "Coordinating with colleagues across the digital teams to ensure project success in a transitional period.",
+                "Responsible for digitising content from Lonely Planet's travel guidebooks in a custom CMS under active development, ensuring content accuracy and suitability for both web and eBook compatibility."
+            ]
+        }
+    ],
+    "skills":
+    [
+        "Business Analysis",
+        "Digital Marketing",
+        "Product Strategy",
+        "Project Management",
+        "Content Optimisation",
+        "Stakeholder Management",
+        "Data Analysis",
+        "SEO",
+        "Copywriting",
+        "UX Design",
+        "Agile Methodologies",
+        "Process Improvement",
+        "Web Strategy",
+        "CMS Implementation"
+    ],
+    "education":
+    [
+        {
+            "degree": "Certified Product Owner",
+            "field": "Product Management",
+            "institution": "SAFe",
+            "graduationYear": 2024
+        },
+        {
+            "degree": "Bachelor of Arts",
+            "field": "Music",
+            "institution": "Australian Catholic University",
+            "graduationYear": 2010
+        }
+    ]
+}

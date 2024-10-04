@@ -1,0 +1,84 @@
+{
+    "summary": "Well-established Business Analyst and Marketing Professional with specialist expertise in analysing business systems, managing campaigns, driving digital projects and coordinating communications initiatives. Robust technical product expertise with sound experience in collaborating with Technology and Engineering professionals to determine technical requirements, feature specifications and product requirements, in addition to formulating solutions for product requirements. Collaborative team leader with highly developed communication and interpersonal skills. Critical thinker, analytical problem solver with high attention to detail. Innovative and creative, accompanied by a high degree of commercial acumen.",
+    "experience":
+    [
+        {
+            "title": "Business Systems Analyst",
+            "company": "R/GA",
+            "startDate": "2018",
+            "endDate": "2024",
+            "responsibilities":
+            [
+                "Enhanced customer-facing and end-user functionality, performance, and delivery through two major system architecture and visual redesigns for a major client's website, leading their first web personalisation program with conversion improvements of 5-38x above baseline.",
+                "Initiated and conducted multiple internal training programs, including technical onboarding, effective use of generative AI, Agile 101, a business analysis centre of excellence, and general computer proficiency.",
+                "Championed the adoption of resilient and adaptable frameworks and templates for diverse clients and projects, covering content updates, reporting, process documentation, feature briefing, and website audits.",
+                "Earned IC-Agile Product Owner and SAFe 6.0 PO/PM certifications and presented at the Sitecore User Group conference on the significance of content architecture and end-user consultation for ROI in enterprise CMS."
+            ]
+        },
+        {
+            "title": "Subscriptions Marketing Manager",
+            "company": "Private Media - Crikey",
+            "startDate": "2016",
+            "endDate": "2017",
+            "responsibilities":
+            [
+                "Doubled customer conversion rates and boosted retention from 40% to 60%, reversing a long-term decline and exceeding the fiscal year budget forecast.",
+                "Implemented new, impactful and result generating marketing, acquisition and retention strategies, informed by market research, audience testing, and internal data, driving significant business growth.",
+                "Led a small cross-functional team to achieve commercial and customer success.",
+                "Delivered and executed responsive campaigns as a result of working collaboratively with internal and external stakeholders at all levels."
+            ]
+        },
+        {
+            "title": "Digital Project / Campaign Manager",
+            "company": "Private Media",
+            "startDate": "2014",
+            "endDate": "2016",
+            "responsibilities":
+            [
+                "Managed simultaneous projects, exceeding client expectations and retaining business whilst maintaining optimal service delivery.",
+                "Produced and edited web content, coordinated external resources, analysed campaigns and influenced product direction effectively."
+            ]
+        },
+        {
+            "title": "Digital Content Editor",
+            "company": "Lonely Planet",
+            "startDate": "2013",
+            "endDate": "2014",
+            "responsibilities":
+            [
+                "Enhanced digital accessibility by digitising the Lonely Planet book content for web and eBook compatibility using an in-house CMS.",
+                "Ensured high accuracy in machine-processed copy, from correcting spelling errors to verifying the current status of businesses reviewed years ago."
+            ]
+        }
+    ],
+    "skills":
+    [
+        "Business Analysis",
+        "Digital Product Specialist",
+        "Business Systems",
+        "Digital Product Marketing",
+        "Training Delivery",
+        "Process Documentation",
+        "System Architecture",
+        "Visual Design",
+        "Content Architecture",
+        "Market Research",
+        "Digital Projects",
+        "Campaign Management"
+    ],
+    "education":
+    [
+        {
+            "degree": "Certified Product Owner",
+            "field": "Product Management",
+            "institution": "SAFe",
+            "graduationYear": 2024
+        },
+        {
+            "degree": "Bachelor of Arts",
+            "field": "Music",
+            "institution": "Australian Catholic University",
+            "graduationYear": 2010
+        }
+    ]
+}
